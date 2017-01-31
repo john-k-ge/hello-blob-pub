@@ -1,0 +1,9 @@
+---
+applications:
+  - name: hello-blob
+    buildpack: https://github.com/cloudfoundry/go-buildpack
+    memory: 128M
+env:
+  SERVICE_NAME: "predix-blobstore"
+  SERVICE_PLAN: "Tiered"
+  REGION: "us-west-2"
